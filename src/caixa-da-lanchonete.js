@@ -1,6 +1,6 @@
 class CaixaDaLanchonete {
-  constructor() {
-    this.cardapio = {
+  constructor() { // o que seria o constructor
+    this.cardapio = { // this chama a class CaixaDaLanchonete
       cafe: { dependeDe: "", valor: 3.0 },
       chantily: { dependeDe: "cafe", valor: 1.5 },
       suco: { dependeDe: "", valor: 6.2 },
@@ -27,7 +27,7 @@ class CaixaDaLanchonete {
   }
 
   calcularValorDaCompra(metodoDePagamento, carrinhoDeCompras) {
-    if (!this.FORMAS_DE_PAGAMENTO.includes(metodoDePagamento)) {
+    if (!this.FORMAS_DE_PAGAMENTO.includes(metodoDePagamento)) { //includes = pesquisar por uma substring dentro de uma string
       return "Forma de pagamento inválida!";
     }
 
